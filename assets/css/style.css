@@ -1,0 +1,58 @@
+html {
+    font-size: 1rem;
+    font-family: 'Oxygen', sans-serif;
+}
+
+header {
+    background-image: url("https://github.com/MarvelousMartin/culs-web-design/blob/master/assets/images/header.jpg?raw=true");
+    min-height: 30vh;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+nav {
+    display: inline;
+    width: 100%;
+    align-items: center;
+    float: bottom;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    float: bottom;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+}
+
+footer {
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+}
