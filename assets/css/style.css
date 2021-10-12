@@ -10,7 +10,7 @@ h1 {
 }
 
 header {
-    background-image: url("https://github.com/MarvelousMartin/culs-web-design/blob/master/assets/images/header.jpg?raw=true");
+    background-image: url("../images/header.jpg");
     min-height: 30vh;
     background-size: cover;
     width: 100%;
