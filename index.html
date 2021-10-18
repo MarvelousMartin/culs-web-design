@@ -15,6 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js"></script>
@@ -24,81 +30,43 @@
     <header>
       <h1>Zpravodajství</h1>
       <button type="button" class="menu-button" id="open-button">
-        <img
-          src="assets/icons/bars-solid.svg"
-          alt="Ikona menu"
-          height="16"
-          width="16"
-          class="icon"
-        />
+        <i class="fas fa-bars fa-fw"></i>
       </button>
       <div id="slide-over">
-        <nav>
+        <div class="div">
           <div>
-            <a href="aktuality.html"
-              ><img
-                src="assets/icons/newspaper-solid.svg"
-                alt="Ikona novin"
-                class="icon"
-              />Aktuality</a
-            >
-            <a href="cr.html"
-              ><img
-                src="assets/icons/flag-regular.svg"
-                alt="Ikona vlajky"
-                class="icon"
-              />ČR</a
-            >
-            <a href="zahranici.html"
-              ><img
-                src="assets/icons/globe-europe-solid.svg"
-                alt="Ikona země"
-                class="icon"
-              />Zahraničí</a
-            >
-            <a href="kultura.html"
-              ><img
-                src="assets/icons/landmark-solid.svg"
-                alt="Ikona chráněné památky"
-                class="icon"
-              />Kultura</a
-            >
-            <a href="ekonomika.html"
-              ><img
-                src="assets/icons/coins-solid.svg"
-                alt="Ikona mincí"
-                class="icon"
-              />Ekonomika</a
-            >
-            <a href="sport.html"
-              ><img
-                src="assets/icons/volleyball-ball-solid.svg"
-                alt="Ikona volejbalové míče"
-                class="icon"
-              />Sport</a
-            >
-            <a href="volby.html"
-              ><img
-                src="assets/icons/person-booth-solid.svg"
-                alt="Ikona volební místnosti"
-                class="icon special"
-              />Volby</a
-            >
+            <h3 class="nav-title">Menu</h3>
+            <nav class="main-nav">
+              <a href="aktuality.html"
+                ><i class="fas fa-newspaper"></i>Aktuality</a
+              >
+              <a href="cr.html"><i class="fas fa-map"></i>ČR</a>
+              <a href="zahranici.html"><i class="fas fa-globe"></i>Zahraničí</a>
+              <a href="kultura.html"><i class="fas fa-palette"></i>Kultura</a>
+              <a href="ekonomika.html"
+                ><i class="fas fa-dollar-sign fa-fw"></i>Ekonomika</a
+              >
+              <a href="sport.html"><i class="fas fa-futbol"></i>Sport</a>
+              <a href="volby.html"><i class="fas fa-person-booth"></i>Volby</a>
+            </nav>
+            <form>
+              <div class="input-group">
+                <label for="search">Hledat</label>
+                <input name="search" id="search" />
+              </div>
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
           </div>
-          <div>
-            <a href="redakce.html">Redakce</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="faq.html">FAQ</a>
-          </div>
-        </nav>
+          <nav>
+            <a href="redakce.html"><i class="fas fa-users"></i>Redakce</a>
+            <a href="kontakt.html"><i class="fas fa-phone"></i>Kontakt</a>
+            <a href="faq.html"><i class="fas fa-question"></i>FAQ</a>
+          </nav>
+        </div>
         <button type="button" class="menu-button" id="close-button">
-          <img
-            src="assets/icons/times-circle-solid.svg"
-            alt="Ikona křížku"
-            height="16"
-            width="16"
-            class="icon"
-          />
+          <i class="fas fa-times fa-fw"></i>
         </button>
       </div>
     </header>
