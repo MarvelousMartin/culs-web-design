@@ -225,6 +225,26 @@ footer {
   margin-top: 50px;
 }
 
+.footer-social {
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.footer-social i {
+  display: inline-block;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 2px black;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+  width: 2.5rem;
+}
+
+.footer-social i:hover {
+  background-color: black;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
 }
 
