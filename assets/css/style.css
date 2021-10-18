@@ -13,6 +13,10 @@ h1 {
   color: #ffffff;
 }
 
+main {
+  padding: 15px;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -22,29 +26,56 @@ header {
 }
 
 #slide-over {
+  box-sizing: content-box;
   position: absolute;
   display: flex;
-  background: gray;
+  background: white;
   width: 0;
   min-height: 100vh;
   overflow: hidden;
   transition: 0.25s ease-in;
   left: 0;
+  top: 0;
+  visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-nav {
+.div {
   display: flex;
   justify-content: space-between;
   padding: 25px;
+  color: #222;
   flex-direction: column;
 }
 
+.nav-title {
+  margin-bottom: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding-bottom: 14px;
+}
+
+nav a > .fas {
+  margin-right: 18px;
+  font-size: 14px;
+}
+
+.main-nav {
+  margin-bottom: 64px;
+}
+
 nav a {
-  color: white;
+  color: #222;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
+}
+
+nav a:last-child {
+  margin-bottom: 0;
 }
 
 nav a img.icon {
@@ -55,14 +86,60 @@ nav a img.icon {
 .menu-button {
   background: none;
   color: white;
-  padding: 0;
+  background-color: white;
+  padding: 8px;
   border: none;
+}
+
+input {
+  border: 1px solid gainsboro;
+  border-radius: 2px;
+  margin-right: 4px;
+  padding: 8px;
+}
+
+.input-group label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.input-group {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus-visible {
+  outline-offset: 0px;
+}
+
+:focus-visible {
+  outline: gray auto 1px;
+}
+
+.fas {
+  color: black;
+}
+
+button {
+  background-color: #e5e7eb;
+  border-radius: 2px;
+  padding: 8px;
+  border: 0;
 }
 
 #close-button {
   position: absolute;
   right: 25px;
   top: 25px;
+  color: white;
+  background-color: #333333;
+  padding: 8px;
+  border: none;
+}
+
+#close-button .fas {
+  color: white;
 }
 
 /* ----- REDAKCE ----- */
