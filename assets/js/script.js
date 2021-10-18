@@ -1,15 +1,15 @@
 window.onload = function () {
-  const openButton = document.getElementById("open-button");
+  const openButton = document.getElementById("open-menu-button");
   openButton.addEventListener("click", function () {
-    const navBar = document.getElementById("slide-over");
-    navBar.style.visibility = "visible";
-    navBar.style.width = "80%";
+    const menu = document.getElementById("menu");
+    menu.style.visibility = "visible";
+    menu.style.width = "80%";
   });
 
-  const closeButton = document.getElementById("close-button");
+  const closeButton = document.getElementById("close-menu-button");
   closeButton.addEventListener("click", function () {
-    const navBar = document.getElementById("slide-over");
-    navBar.style.width = "0";
-    navBar.style.visibility = "hidden";
+    const menu = document.getElementById("menu");
+    menu.style.width = "0";
+    menu.style.visibility = "hidden";
   });
 };
