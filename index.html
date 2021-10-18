@@ -16,6 +16,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
@@ -28,60 +32,68 @@
   <body>
     <!-- Hlavička -->
     <header>
-      <h1>Zpravodajství</h1>
-      <button type="button" class="menu-button" id="open-button">
-        <i class="fas fa-bars fa-fw"></i>
-      </button>
-      <div id="slide-over">
-        <div class="div">
+      <div id="topbar">Šokující zprávy</div>
+      <div id="header">
+        <div id="header-top">
           <div>
-            <h3 class="nav-title">Menu</h3>
-            <nav class="main-nav">
-              <a href="aktuality.html" title="Aktuality"
-                ><i class="fas fa-newspaper"></i>Aktuality</a
+            <h1>neww.</h1>
+            <h2>Čerstvé novinky každý den</h2>
+          </div>
+          <div id="header-top-banner">Reklama</div>
+        </div>
+        <button type="button" class="menu-button" id="open-menu-button">
+          <i class="fas fa-bars fa-fw"></i>
+        </button>
+        <div id="menu">
+          <div id="menu-content">
+            <div>
+              <h3 id="menu-content-title">Menu</h3>
+              <nav id="menu-content-primary">
+                <a href="aktuality.html" title="Aktuality"
+                  ><i class="fas fa-newspaper"></i>Aktuality</a
+                >
+                <a href="cr.html" title="ČR"><i class="fas fa-map"></i>ČR</a>
+                <a href="zahranici.html" title="Zahraničí"
+                  ><i class="fas fa-globe"></i>Zahraničí</a
+                >
+                <a href="kultura.html" title="Kultura"
+                  ><i class="fas fa-palette"></i>Kultura</a
+                >
+                <a href="ekonomika.html" title="Ekonomika"
+                  ><i class="fas fa-dollar-sign fa-fw"></i>Ekonomika</a
+                >
+                <a href="sport.html" title="Sport"
+                  ><i class="fas fa-futbol"></i>Sport</a
+                >
+                <a href="volby.html" title="Volby 2021"
+                  ><i class="fas fa-person-booth"></i>Volby</a
+                >
+              </nav>
+              <form>
+                <div class="input-group">
+                  <input name="search" placeholder="Volby 2021" id="search" />
+                </div>
+                <button type="submit" class="search-button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <nav id="menu-content-secondary">
+              <a href="redakce.html" title="Redakce"
+                ><i class="fas fa-users"></i>Redakce</a
               >
-              <a href="cr.html" title="ČR"><i class="fas fa-map"></i>ČR</a>
-              <a href="zahranici.html" title="Zahraničí"
-                ><i class="fas fa-globe"></i>Zahraničí</a
+              <a href="kontakt.html" title="Kontakt"
+                ><i class="fas fa-phone"></i>Kontakt</a
               >
-              <a href="kultura.html" title="Kultura"
-                ><i class="fas fa-palette"></i>Kultura</a
-              >
-              <a href="ekonomika.html" title="Ekonomika"
-                ><i class="fas fa-dollar-sign fa-fw"></i>Ekonomika</a
-              >
-              <a href="sport.html" title="Sport"
-                ><i class="fas fa-futbol"></i>Sport</a
-              >
-              <a href="volby.html" title="Volby 2021"
-                ><i class="fas fa-person-booth"></i>Volby</a
+              <a href="faq.html" title="FAQ"
+                ><i class="fas fa-question"></i>FAQ</a
               >
             </nav>
-            <form>
-              <div class="input-group">
-                <label for="search">Hledat</label>
-                <input name="search" id="search" />
-              </div>
-              <button type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
           </div>
-          <nav>
-            <a href="redakce.html" title="Redakce"
-              ><i class="fas fa-users"></i>Redakce</a
-            >
-            <a href="kontakt.html" title="Kontakt"
-              ><i class="fas fa-phone"></i>Kontakt</a
-            >
-            <a href="faq.html" title="FAQ"
-              ><i class="fas fa-question"></i>FAQ</a
-            >
-          </nav>
+          <button type="button" class="menu-button" id="close-menu-button">
+            <i class="fas fa-times fa-fw"></i>
+          </button>
         </div>
-        <button type="button" class="menu-button" id="close-button">
-          <i class="fas fa-times fa-fw"></i>
-        </button>
       </div>
     </header>
 
