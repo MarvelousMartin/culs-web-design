@@ -104,6 +104,7 @@ header {
 }
 
 #menu-content-title {
+  display: inline-block;
   margin-bottom: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -137,7 +138,7 @@ header {
 }
 
 .input-group {
-  margin-bottom: 8px;
+  margin-right: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -153,6 +154,14 @@ header {
 }
 
 .search-button > .fas {
+  color: white;
+}
+
+#open-menu-button {
+  background-color: #222222;
+}
+
+#open-menu-button .fas {
   color: white;
 }
 
