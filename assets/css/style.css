@@ -245,6 +245,10 @@ footer {
   color: white;
 }
 
+.footer-social i:visited { /* Ikony se barvily do černa, pokud na ně uživatel klikl */
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
 }
 
