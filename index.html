@@ -27,7 +27,7 @@
     />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <!-- Hlavička -->
@@ -108,24 +108,27 @@
 
     <!-- Patička -->
     <footer>
-      <hr />
-      <a>
-        <i class="far fa-copyright"></i>
-        <strong>
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-        </strong>
-        | Martin Dub, Martin Choutka, Jindřich Cvak
-      </a>
-      <br /> <!-- 4:00 ráno řešení -->
-      <br />
-      <a class="footer-description">Studentský projekt</a>
-      <div class="footer-social">
-        <a><i class="fab fa-facebook-f"></i></a>
-        <a><i class="fab fa-linkedin-in"></i></a>
-        <a><i class="fab fa-twitter"></i></a>
-        <a><i class="fab fa-github"></i></a>
+      <div id="footer-top">
+        <a href="https://www.facebook.com/" class="social-link" target="_blank"
+          ><i class="fab fa-facebook-f fa-fw"></i
+        ></a>
+        <a href="https://www.linkedin.com/" class="social-link" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://twitter.com/" class="social-link" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://github.com/" class="social-link" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <div id="footer-bottom">
+        <a href="/" id="footer-bottom-description">Studentský projekt</a>
+        <div>
+          <i class="far fa-copyright"></i>
+          <span id="footer-bottom-year">2021</span>
+          | Martin Dub, Martin Choutka, Jindřich Cvak
+        </div>
       </div>
     </footer>
   </body>
