@@ -12,6 +12,10 @@ button {
   border-radius: 2px;
 }
 
+a {
+  cursor: pointer;
+}
+
 input:focus-visible {
   outline: gray auto 1px;
 }
@@ -23,7 +27,7 @@ h1 {
 }
 
 main {
-  padding: 16px;
+  padding: 32px 16px;
 }
 
 header {
@@ -66,7 +70,7 @@ header {
   box-sizing: content-box;
   position: absolute;
   display: flex;
-  background: white;
+  background-color: rgba(0, 0, 0, 0.75);
   width: 0;
   min-height: 100vh;
   overflow: hidden;
@@ -82,6 +86,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 25px;
+  background-color: #ffffff;
   color: #222;
   flex-direction: column;
 }
@@ -169,11 +174,11 @@ header {
   position: absolute;
   right: 25px;
   top: 25px;
-  background-color: #222222;
+  background-color: #ffffff;
 }
 
 #close-menu-button .fas {
-  color: white;
+  color: #222222;
 }
 
 /* ----- REDAKCE ----- */
@@ -218,41 +223,51 @@ header {
 
 /* ----- FOOTER ----- */
 footer {
-  font-size: 1rem;
+  padding: 12px 0;
   text-align: center;
-  width: 100%;
-  height: 7vh;
-  margin-top: 50px;
+  border-top: 1px solid #d1d5db;
 }
 
-.footer-description {
+#footer-bottom-description {
   color: #777777;
   font-weight: lighter;
-  margin-top: 15px;
 }
 
-.footer-social {
-  line-height: 2.5rem;
-  font-size: 1.25rem;
-  margin-top: 0.5rem;
+#footer-top {
+  margin-bottom: 12px;
 }
 
-.footer-social i {
-  display: inline-block;
-  border-radius: 2.5rem;
-  box-shadow: 0 0 2px black;
-  padding: 0.5rem 0.5rem;
-  margin: 0 0.5rem 0 0.5rem;
-  width: 2.5rem;
+.social-link {
+  padding: 8px;
+  border: 1px solid #777777;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  color: #222222;
+  margin-right: 8px;
+  text-decoration: none;
 }
 
-.footer-social i:hover {
-  background-color: black;
-  color: white;
+.social-link:hover {
+  background-color: #222222;
+  color: #ffffff;
 }
 
-.footer-social i:visited { /* Ikony se barvily do černa, pokud na ně uživatel klikl */
-  color: black;
+#footer-top i:visited {
+  /* Ikony se barvily do černa, pokud na ně uživatel klikl */
+  color: #000000;
+}
+
+#footer-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-bottom-description {
+  margin-bottom: 18px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -380,6 +395,10 @@ footer {
 
   #close-menu-button {
     display: none;
+  }
+
+  footer {
+    padding: 24px 64px;
   }
 }
 
