@@ -225,6 +225,12 @@ footer {
   margin-top: 50px;
 }
 
+.footer-description {
+  color: #777777;
+  font-weight: lighter;
+  margin-top: 15px;
+}
+
 .footer-social {
   line-height: 2.5rem;
   font-size: 1.25rem;
