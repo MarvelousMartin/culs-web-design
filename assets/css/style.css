@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #222222;
+  --secondary-color: #ffffff;
+  --primary-bg-color: #222222;
+  --secondary-bg-color: #ffffff;
+}
+
 html {
   font-family: "Oxygen", sans-serif;
 }
@@ -37,7 +44,7 @@ header {
 }
 
 #topbar {
-  background-color: #222222;
+  background-color: var(--primary-bg-color);
   color: #ffffff;
   padding: 16px;
   font-size: 14px;
@@ -153,7 +160,7 @@ header {
 }
 
 .search-button {
-  background-color: #222;
+  background-color: var(--primary-bg-color);
   padding: 12px;
   height: 36px;
 }
@@ -163,7 +170,7 @@ header {
 }
 
 #open-menu-button {
-  background-color: #222222;
+  background-color: var(--primary-bg-color);
 }
 
 #open-menu-button .fas {
@@ -178,7 +185,7 @@ header {
 }
 
 #close-menu-button .fas {
-  color: #222222;
+  color: var(--primary-color);
 }
 
 /* ----- REDAKCE ----- */
@@ -246,13 +253,13 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  color: #222222;
+  color: var(--primary-color);
   margin-right: 8px;
   text-decoration: none;
 }
 
 .social-link:hover {
-  background-color: #222222;
+  background-color: var(--primary-bg-color);
   color: #ffffff;
 }
 
