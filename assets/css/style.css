@@ -7,6 +7,15 @@
   --secondary-color: #ffffff;
   --primary-bg-color: #222222;
   --secondary-bg-color: #ffffff;
+  --primary-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-5xl: 48px;
 }
 
 html {
@@ -29,8 +38,8 @@ input:focus-visible {
 
 h1 {
   font-weight: bold;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: var(--font-lg);
+  color: var(--secondary-color);
 }
 
 main {
@@ -38,16 +47,15 @@ main {
 }
 
 header {
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: var(--secondary-bg-color);
+  box-shadow: var(--primary-box-shadow);
 }
 
 #topbar {
   background-color: var(--primary-bg-color);
-  color: #ffffff;
+  color: var(--secondary-color);
   padding: 16px;
-  font-size: 14px;
+  font-size: var(--font-sm);
   text-align: center;
 }
 
@@ -63,9 +71,9 @@ header {
 }
 
 #header-top h1 {
-  color: #222;
+  color: var(--primary-color);
   font-weight: 900;
-  font-size: 24px;
+  font-size: var(--font-size-2xl);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -85,21 +93,20 @@ header {
   left: 0;
   top: 0;
   visibility: hidden;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: var(--primary-box-shadow);
 }
 
 #menu-content {
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  background-color: #ffffff;
-  color: #222;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-color);
   flex-direction: column;
 }
 
 #menu-content nav > a {
-  color: #222;
+  color: var(--primary-color);
   text-decoration: none;
   margin-bottom: 24px;
   display: flex;
@@ -112,7 +119,7 @@ header {
 
 #menu-content a > .fas {
   margin-right: 18px;
-  font-size: 14px;
+  font-size: var(--font-size-sm);
 }
 
 #menu-content-title {
@@ -133,14 +140,14 @@ header {
 }
 
 .menu-button {
-  background-color: white;
+  background-color: var(--secondary-color);
   padding: 8px;
   border: none;
 }
 
 .input-group input {
   height: 36px;
-  border: 1px solid #222;
+  border: 1px solid var(--primary-color);
   padding: 8px;
 }
 
@@ -156,7 +163,7 @@ header {
 }
 
 .fas {
-  color: black;
+  color: var(--primary-color);
 }
 
 .search-button {
@@ -181,7 +188,7 @@ header {
   position: absolute;
   right: 25px;
   top: 25px;
-  background-color: #ffffff;
+  background-color: var(--secondary-bg-color);
 }
 
 #close-menu-button .fas {
@@ -195,7 +202,7 @@ header {
 }
 
 .redakce-karta {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--primary-box-shadow);
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -207,7 +214,7 @@ header {
 
 .redakce-pozice {
   color: grey;
-  font-size: 1.3rem;
+  font-size: var(--font-size-xl);
 }
 
 .redakce-mail {
@@ -216,11 +223,11 @@ header {
 
 .redakce-mail button {
   color: white;
-  background-color: #222333;
+  background-color: var(--primary-bg-color);
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   height: 3rem;
 }
 
@@ -260,7 +267,7 @@ footer {
 
 .social-link:hover {
   background-color: var(--primary-bg-color);
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 #footer-top i:visited {
@@ -314,13 +321,13 @@ footer {
 
   #header-top h1 {
     margin-bottom: 16px;
-    font-size: 48px;
+    font-size: var(--font-size-5xl);
   }
 
   #header-top h2 {
     display: block;
     font-weight: 900;
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     font-family: "Montserrat", sans-serif;
   }
 
@@ -358,7 +365,7 @@ footer {
     margin-bottom: 0;
     text-transform: uppercase;
     margin-right: 28px;
-    font-size: 13px;
+    font-size: var(--font-size-xs);
   }
 
   #menu-content nav > a:last-child {
