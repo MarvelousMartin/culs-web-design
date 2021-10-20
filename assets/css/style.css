@@ -3,23 +3,39 @@
 }
 
 :root {
-  --primary-color: #222222;
-  --secondary-color: #ffffff;
-  --primary-bg-color: #222222;
-  --secondary-bg-color: #ffffff;
-  --primary-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  /* Color */
+  --color-primary: #222222;
+  --color-secondary: #ffffff;
+  --color-gray: #777777;
+
+  /* Background Color */
+  --bg-color-primary: #222222;
+  --bg-color-secondary: #ffffff;
+
+  --bg-color-primary-transparent: rgba(34, 34, 34, 0.75);
+
+  /* Box Shadow */
+  --box-shadow-primary: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  /* Font Size */
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-base: 16px;
   --font-size-lg: 18px;
   --font-size-xl: 20px;
   --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
   --font-size-5xl: 48px;
+
+  /* Font Family */
+  --font-primary: "Oxygen", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
 }
 
 html {
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-primary);
 }
 
 button {
@@ -39,7 +55,7 @@ input:focus-visible {
 h1 {
   font-weight: bold;
   font-size: var(--font-lg);
-  color: var(--secondary-color);
+  color: var(--color-secondary);
 }
 
 main {
@@ -47,15 +63,15 @@ main {
 }
 
 header {
-  background-color: var(--secondary-bg-color);
-  box-shadow: var(--primary-box-shadow);
+  background-color: var(--bg-color-secondary);
+  box-shadow: var(--box-shadow-primary);
 }
 
 #topbar {
-  background-color: var(--primary-bg-color);
-  color: var(--secondary-color);
+  background-color: var(--bg-color-primary);
+  color: var(--color-secondary);
   padding: 16px;
-  font-size: var(--font-sm);
+  font-size: var(--font-size-sm);
   text-align: center;
 }
 
@@ -71,10 +87,10 @@ header {
 }
 
 #header-top h1 {
-  color: var(--primary-color);
+  color: var(--color-primary);
   font-weight: 900;
   font-size: var(--font-size-2xl);
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
 }
 
 #header-top h2 {
@@ -85,7 +101,7 @@ header {
   box-sizing: content-box;
   position: absolute;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--bg-color-primary-transparent);
   width: 0;
   min-height: 100%;
   overflow: hidden;
@@ -93,20 +109,20 @@ header {
   left: 0;
   top: 0;
   visibility: hidden;
-  box-shadow: var(--primary-box-shadow);
+  box-shadow: var(--box-shadow-primary);
 }
 
 #menu-content {
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-color);
+  background-color: var(--bg-color-secondary);
+  color: var(--color-primary);
   flex-direction: column;
 }
 
 #menu-content nav > a {
-  color: var(--primary-color);
+  color: var(--color-primary);
   text-decoration: none;
   margin-bottom: 24px;
   display: flex;
@@ -140,14 +156,14 @@ header {
 }
 
 .menu-button {
-  background-color: var(--secondary-color);
+  background-color: var(--color-secondary);
   padding: 8px;
   border: none;
 }
 
 .input-group input {
   height: 36px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--color-primary);
   padding: 8px;
 }
 
@@ -163,36 +179,36 @@ header {
 }
 
 .fas {
-  color: var(--primary-color);
+  color: var(--color-primary);
 }
 
 .search-button {
-  background-color: var(--primary-bg-color);
+  background-color: var(--bg-color-primary);
   padding: 12px;
   height: 36px;
 }
 
 .search-button > .fas {
-  color: white;
+  color: var(--color-secondary);
 }
 
 #open-menu-button {
-  background-color: var(--primary-bg-color);
+  background-color: var(--bg-color-primary);
 }
 
 #open-menu-button .fas {
-  color: white;
+  color: var(--color-secondary);
 }
 
 #close-menu-button {
   position: absolute;
   right: 25px;
   top: 25px;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-color-secondary);
 }
 
 #close-menu-button .fas {
-  color: var(--primary-color);
+  color: var(--color-primary);
 }
 
 /* ----- REDAKCE ----- */
@@ -202,7 +218,7 @@ header {
 }
 
 .redakce-karta {
-  box-shadow: var(--primary-box-shadow);
+  box-shadow: var(--box-shadow-primary);
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -222,8 +238,8 @@ header {
 }
 
 .redakce-mail button {
-  color: white;
-  background-color: var(--primary-bg-color);
+  color: var(--color-secondary);
+  background-color: var(--bg-color-primary);
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -253,21 +269,21 @@ footer {
 
 .social-link {
   padding: 8px;
-  border: 1px solid #777777;
+  border: 1px solid var(--color-gray);
   width: 40px;
   height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  color: var(--primary-color);
+  color: var(--color-primary);
   margin-right: 8px;
   text-decoration: none;
 }
 
 .social-link:hover {
-  background-color: var(--primary-bg-color);
-  color: var(--secondary-color);
+  background-color: var(--bg-color-primary);
+  color: var(--color-secondary);
 }
 
 #footer-top i:visited {
@@ -311,7 +327,7 @@ footer {
 
   #header-top-banner {
     height: 120px;
-    width: 720px;
+    width: 40%;
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
@@ -328,7 +344,7 @@ footer {
     display: block;
     font-weight: 900;
     font-size: var(--font-size-lg);
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secondary);
   }
 
   #menu {
@@ -358,6 +374,7 @@ footer {
 
   #menu-content nav {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
   }
 
