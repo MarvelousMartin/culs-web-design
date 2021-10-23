@@ -669,6 +669,7 @@ a#footer-bottom-description {
     justify-content: space-between;
     align-items: center;
     padding: 36px 0;
+    user-select: none;
   }
 
   #header-top-banner {
@@ -678,7 +679,7 @@ a#footer-bottom-description {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #777777;
+    color: #9ca3af;
   }
 
   #header-top h1 {
