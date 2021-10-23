@@ -113,11 +113,37 @@ header {
 }
 
 #topbar {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--bg-color-primary);
   color: var(--color-secondary);
   padding: 16px;
   font-size: var(--font-size-sm);
   text-align: center;
+  font-weight: 600;
+}
+
+#topbar-left {
+  display: flex;
+  gap: 10px;
+}
+
+#topbar-left a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-secondary);
+}
+
+#topbar-right a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-secondary);
+}
+
+#topbar .fas {
+  color: var(--color-secondary);
 }
 
 #header {
@@ -386,13 +412,15 @@ header {
 
 .article-other {
   grid-area: articles;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .article-other > h3 {
   font-size: var(--font-size-lg);
   font-family: var(--font-secondary);
   font-weight: 800;
-  margin-bottom: 20px;
 }
 
 .article-new-comment {
@@ -510,6 +538,20 @@ header {
   justify-content: center;
 }
 
+.dot {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /* ----- REDAKCE ----- */
 
 .redakce-obsah {
@@ -614,7 +656,6 @@ a#footer-bottom-description {
 
   #topbar {
     padding: 18px 64px;
-    font-weight: bold;
   }
 
   #header {
@@ -628,6 +669,7 @@ a#footer-bottom-description {
     justify-content: space-between;
     align-items: center;
     padding: 36px 0;
+    user-select: none;
   }
 
   #header-top-banner {
@@ -637,7 +679,7 @@ a#footer-bottom-description {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #777777;
+    color: #9ca3af;
   }
 
   #header-top h1 {
