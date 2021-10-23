@@ -1,16 +1,20 @@
 window.onload = function () {
   const year = document.getElementById("footer-bottom-year");
-  year.innerHTML = new Date().getFullYear();
+  const body = document.body;
+  const menu = document.getElementById("menu");
   const openButton = document.getElementById("open-menu-button");
+  const closeButton = document.getElementById("close-menu-button");
+
+  year.innerHTML = new Date().getFullYear();
+
   openButton.addEventListener("click", function () {
-    const menu = document.getElementById("menu");
+    body.style.overflow = "hidden";
     menu.style.visibility = "visible";
     menu.style.width = "100%";
   });
 
-  const closeButton = document.getElementById("close-menu-button");
   closeButton.addEventListener("click", function () {
-    const menu = document.getElementById("menu");
+    body.style.overflow = "visible";
     menu.style.width = "0";
     menu.style.visibility = "hidden";
   });
