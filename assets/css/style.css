@@ -8,10 +8,12 @@
   --color-primary: #1f2937;
   --color-secondary: #ffffff;
   --color-gray: #777777;
+  --color-orange: orange;
 
   /* Background Color */
   --bg-color-primary: #1f2937;
   --bg-color-secondary: #ffffff;
+  --bg-color-alternative: orange;
 
   --bg-color-primary-transparent: rgba(34, 34, 34, 0.75);
 
@@ -231,7 +233,7 @@ header {
 
 .menu-active {
   font-weight: bold;
-  color: orange;
+  color:var(--color-orange) !important;
 }
 
 .menu-button {
@@ -586,24 +588,6 @@ header {
   margin: 1rem 0;
 }
 
-.team-mail {
-  margin: 0;
-}
-
-.team-mail button {
-  color: var(--color-secondary);
-  background-color: var(--bg-color-primary);
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: var(--font-size-lg);
-  height: 3rem;
-}
-
-.team-mail button:hover {
-  background-color: orange;
-}
-
 .team-social {
   margin: .5rem 0;
 }
@@ -671,8 +655,8 @@ footer {
 }
 
 .social-link:hover {
-  background-color: var(--bg-color-primary);
-  color: var(--color-secondary);
+  background-color: var(--bg-color-alternative);
+  color: white;
   text-decoration: none;
 }
 
