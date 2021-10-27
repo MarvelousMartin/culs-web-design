@@ -96,7 +96,7 @@ input:focus-visible {
 
 h1 {
   font-weight: bold;
-  font-size: var(--font-3xl);
+  font-size: var(--font-size-3xl); /* chyba v názvu proměnné? MD */
 }
 
 h2 {
@@ -227,6 +227,11 @@ header {
 
 #menu-content .input-group {
   margin-right: 10px;
+}
+
+.menu-active {
+  font-weight: bold;
+  color: orange;
 }
 
 .menu-button {
@@ -554,32 +559,38 @@ header {
 
 /* ----- REDAKCE ----- */
 
-.redakce-obsah {
+.team-content {
   display: flex;
   justify-content: space-between;
 }
 
-.redakce-karta {
+.team-card {
   box-shadow: var(--box-shadow-primary);
   max-width: 300px;
   margin: auto;
   text-align: center;
 }
 
-.redakce-karta img {
+.team-card img {
   width: 100%;
 }
 
-.redakce-pozice {
-  color: grey;
-  font-size: var(--font-size-xl);
+.team-name {
+  font-weight: bold;
+  padding-top: .2rem;
 }
 
-.redakce-mail {
+.team-role {
+  color: grey;
+  font-size: var(--font-size-xl);
+  margin: 1rem 0;
+}
+
+.team-mail {
   margin: 0;
 }
 
-.redakce-mail button {
+.team-mail button {
   color: var(--color-secondary);
   background-color: var(--bg-color-primary);
   text-align: center;
@@ -589,8 +600,45 @@ header {
   height: 3rem;
 }
 
-.redakce-mail button:hover {
+.team-mail button:hover {
   background-color: orange;
+}
+
+.team-social {
+  margin: .5rem 0;
+}
+
+/* ----- FAQ ----- */
+
+.faq-title {
+  font-size: var(--font-size-5xl);
+}
+
+.faq-content {
+  padding-top: 3rem;
+  word-wrap: break-word;
+}
+
+.faq-article {
+  padding-left: 15px;
+  width: 85%;
+  display: block;
+  margin: auto;
+}
+
+.faq-article h2 {
+  font-weight: bold
+}
+
+.faq-article hr {
+  float: left;
+  border: 0;
+  border-top: 2px solid orange;
+  width: 100%;
+}
+
+.faq-question {
+  padding-bottom: 10px;
 }
 
 /* ----- FOOTER ----- */
