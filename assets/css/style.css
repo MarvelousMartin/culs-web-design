@@ -8,12 +8,12 @@
   --color-primary: #1f2937;
   --color-secondary: #ffffff;
   --color-gray: #777777;
-  --color-orange: orange;
+  --color-orange: #d97706;
 
   /* Background Color */
   --bg-color-primary: #1f2937;
   --bg-color-secondary: #ffffff;
-  --bg-color-alternative: orange;
+  --bg-color-alternative: #d97706;
 
   --bg-color-primary-transparent: rgba(34, 34, 34, 0.75);
 
@@ -98,7 +98,7 @@ input:focus-visible {
 
 h1 {
   font-weight: bold;
-  font-size: var(--font-size-3xl); /* chyba v názvu proměnné? MD */
+  font-size: var(--font-size-3xl);
 }
 
 h2 {
@@ -306,6 +306,14 @@ header {
 
 /* Section */
 
+.card-container {
+  margin-bottom: 45px;
+}
+
+.news-section:last-child {
+  margin-bottom: 0;
+}
+
 .news-section > h2 {
   font-size: var(--font-size-2xl);
   font-family: var(--font-secondary);
@@ -328,6 +336,9 @@ header {
   box-shadow: var(--box-shadow-primary);
   border-radius: var(--border-radius-sm);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-background {
@@ -666,11 +677,6 @@ footer {
   text-decoration: none;
 }
 
-#footer-top i:visited {
-  /* Ikony se barvily do černa, pokud na ně uživatel klikl */
-  color: #000000;
-}
-
 #footer-bottom {
   display: flex;
   flex-direction: column;
@@ -813,24 +819,10 @@ a#footer-bottom-description {
     display: none;
   }
 
-  /* Article */
-
-  .article {
-    display: grid;
-    grid-template-areas: "social breadcrumb articles" "social article articles" ". article ." ". comments .";
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 80px;
-  }
-
-  .article-social {
-    flex-direction: column;
-  }
-
   /* Card */
 
   .card-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   footer {
@@ -839,7 +831,37 @@ a#footer-bottom-description {
 }
 
 @media only screen and (min-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .article {
+    grid-template-areas: "social breadcrumb" "social article" ". article" ". articles" ". comments";
+    grid-template-columns: 1fr 9fr;
+    gap: 40px;
+  }
+
+  .article-social {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  .article {
+    grid-template-areas: "social breadcrumb articles" "social article articles" ". article ." ". comments .";
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 60px;
+  }
+
+  .article-social {
+    flex-direction: column;
+    align-items: flex-end;
+    position: sticky;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .card-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
