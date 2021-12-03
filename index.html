@@ -43,6 +43,7 @@
     <!-- Skripty -->
     <script src="assets/js/script.js" defer></script>
   </head>
+
   <body>
     <!-- Hlavička -->
     <header>
@@ -54,7 +55,7 @@
           ></a>
         </div>
         <div id="topbar-right">
-          <a href="">Přihlásit se <i class="fas fa-sign-in-alt"></i></a>
+          <a href="/">Přihlásit se <i class="fas fa-sign-in-alt"></i></a>
         </div>
       </div>
       <div id="header">
@@ -94,7 +95,7 @@
                 <div class="input-group">
                   <input name="search" placeholder="Volby 2021" id="search" />
                 </div>
-                <button type="submit" class="search-button">
+                <button type="submit" aria-label="Hledat" class="search-button">
                   <i class="fas fa-search"></i>
                 </button>
               </form>
@@ -785,16 +786,36 @@
     <!-- Patička -->
     <footer>
       <div id="footer-top">
-        <a href="https://www.facebook.com/" class="social-link" target="_blank"
+        <a
+          href="https://www.facebook.com/"
+          rel="noopener"
+          aria-label="Facebook"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-facebook-f fa-fw"></i
         ></a>
-        <a href="https://www.linkedin.com/" class="social-link" target="_blank"
+        <a
+          href="https://www.linkedin.com/"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-linkedin-in"></i
         ></a>
-        <a href="https://twitter.com/" class="social-link" target="_blank"
+        <a
+          href="https://twitter.com/"
+          rel="noopener"
+          aria-label="Twitter"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-twitter"></i
         ></a>
-        <a href="https://github.com/" class="social-link" target="_blank"
+        <a
+          href="https://github.com/"
+          rel="noopener"
+          aria-label="GitHub"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-github"></i
         ></a>
       </div>

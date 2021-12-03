@@ -650,7 +650,6 @@ footer {
 }
 
 #footer-bottom-description {
-  color: #777777;
   font-weight: lighter;
 }
 
@@ -723,7 +722,6 @@ a#footer-bottom-description {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #9ca3af;
   }
 
   #header-top h1 {
