@@ -47,16 +47,19 @@
     <!-- Skripty -->
     <script src="assets/js/script.js" defer></script>
   </head>
+
   <body>
     <!-- Hlavička -->
     <header>
       <div id="topbar">
         <div id="topbar-left">
           <i class="fas fa-circle dot"></i>Volby 2021 živě!
-          <a href="volby.html">Více <i class="fas fa-long-arrow-alt-right"></i></a>
+          <a href="volby.html"
+            >Více <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
         </div>
         <div id="topbar-right">
-          <a href="">Přihlásit se <i class="fas fa-sign-in-alt"></i></a>
+          <a href="/">Přihlásit se <i class="fas fa-sign-in-alt"></i></a>
         </div>
       </div>
       <div id="header">
@@ -96,7 +99,7 @@
                 <div class="input-group">
                   <input name="search" placeholder="Volby 2021" id="search" />
                 </div>
-                <button type="submit" class="search-button">
+                <button type="submit" aria-label="Hledat" class="search-button">
                   <i class="fas fa-search"></i>
                 </button>
               </form>
@@ -128,7 +131,11 @@
           <h2 class="team-name">Martin Dub</h2>
           <p class="team-role">Franta Flinta z Horní Dolní</p>
           <p>Česká Zemědělská univerzita v Praze</p>
-          <a href="mailto:" class="social-link team-social" target="_blank"
+          <a
+            href="mailto:martindub@mail.cz"
+            aria-label="Napsat email"
+            class="social-link team-social"
+            target="_blank"
             ><i class="far fa-envelope"></i
           ></a>
         </div>
@@ -137,7 +144,11 @@
           <h2 class="team-name">Martin Choutka</h2>
           <p class="team-role">Ředitel galaxie</p>
           <p>Česká Zemědělská univerzita v Praze</p>
-          <a href="mailto:" class="social-link team-social" target="_blank"
+          <a
+            href="mailto:martinchoutka@mail.cz"
+            aria-label="Napsat email"
+            class="social-link team-social"
+            target="_blank"
             ><i class="far fa-envelope"></i
           ></a>
         </div>
@@ -146,7 +157,11 @@
           <h2 class="team-name">Jindřich Cvak</h2>
           <p class="team-role">Prodal Bitcoin na $19000</p>
           <p>Česká Zemědělská univerzita v Praze</p>
-          <a href="mailto:" class="social-link team-social" target="_blank"
+          <a
+            href="mailto:jindrichcvak@mail.cz"
+            aria-label="Napsat email"
+            class="social-link team-social"
+            target="_blank"
             ><i class="far fa-envelope"></i
           ></a>
         </div>
@@ -156,16 +171,36 @@
     <!-- Patička -->
     <footer>
       <div id="footer-top">
-        <a href="https://www.facebook.com/" class="social-link" target="_blank"
+        <a
+          href="https://www.facebook.com/"
+          rel="noopener"
+          aria-label="Facebook"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-facebook-f fa-fw"></i
         ></a>
-        <a href="https://www.linkedin.com/" class="social-link" target="_blank"
+        <a
+          href="https://www.linkedin.com/"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-linkedin-in"></i
         ></a>
-        <a href="https://twitter.com/" class="social-link" target="_blank"
+        <a
+          href="https://twitter.com/"
+          rel="noopener"
+          aria-label="Twitter"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-twitter"></i
         ></a>
-        <a href="https://github.com/" class="social-link" target="_blank"
+        <a
+          href="https://github.com/"
+          rel="noopener"
+          aria-label="GitHub"
+          class="social-link"
+          target="_blank"
           ><i class="fab fa-github"></i
         ></a>
       </div>
